@@ -241,14 +241,14 @@ body {
   right: 3rem;
   display: flex;
   align-items: center; }
+  .social__link {
+    margin-right: 1.4rem; }
   .social__icon {
     width: 2rem;
     height: 2rem;
     fill: var(--color-primary);
     cursor: pointer;
     transition: all 0.2s; }
-    .social__icon:not(:last-child) {
-      margin-right: 1.4rem; }
   .social__icon:hover {
     transform: translateY(-2px); }
 
