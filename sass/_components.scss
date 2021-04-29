@@ -48,11 +48,19 @@
       @media only screen and (max-width: $bp-medium) {
         border-right: 2px solid var(--color-grey-light-1);
       }
+
+      @media only screen and (max-width: $bp-smallest) {
+        border-right: 1px solid var(--color-grey-light-1);
+      }
     }
 
     @media only screen and (max-width: $bp-medium) {
       color: var(--color-grey-light-1);
       font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.2rem;
     }
   }
 
@@ -186,6 +194,10 @@
     -webkit-text-stroke: 1px var(--color-primary-light);
     -webkit-text-fill-color: transparent;
     padding: 0 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 3rem;
+    }
   }
 
   &__stars {
@@ -264,22 +276,40 @@
   border-radius: 3px;
 }
 .photo-btn-1 {
-  bottom: 32rem;
+  bottom: 35vh;
+  @media only screen and (max-height: $bp-smallest) {
+    bottom: 40vh;
+  }
 }
 .photo-btn-2 {
-  bottom: 28rem;
+  bottom: 30vh;
+  @media only screen and (max-height: $bp-smallest) {
+    bottom: 30vh;
+  }
 }
 .photo-btn-3 {
-  bottom: 24rem;
+  bottom: 25vh;
+  @media only screen and (max-height: $bp-smallest) {
+    bottom: 20vh;
+  }
 }
 .radio-toggle-1:checked ~ .main-view {
   background-image: url('../img/tea-1.jpg');
+  @media only screen and (max-height: $bp-smallest) {
+    background-position: bottom center;
+  }
 }
 .radio-toggle-2:checked ~ .main-view {
   background-image: url('../img/tea-2.jpg');
+  @media only screen and (max-height: $bp-smallest) {
+    background-position-y: 90%;
+  }
 }
 .radio-toggle-3:checked ~ .main-view {
   background-image: url('../img/tea-3.jpg');
+  @media only screen and (max-height: $bp-smallest) {
+    background-position-y: 65%;
+  }
 }
 
 .radio-toggle-1:checked ~ .photo-btn-1::before {

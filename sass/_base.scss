@@ -42,6 +42,10 @@ html {
   @media only screen and (max-width: $bp-large) {
     font-size: 60%;
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 50%;
+  }
 }
 
 body {
